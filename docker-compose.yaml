@@ -1,0 +1,10 @@
+mosquitto:
+    image: eclipse-mosquitto
+    container_name: mosquitto
+    volumes:
+      - /srv/mosquitto:/mosquitto
+      - /srv/mosquitto/data:/mosquitto/data
+      - /srv/mosquitto/log:/mosquitto/log
+    ports:
+      - 1883:1883
+      - 9001:9001
